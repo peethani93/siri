@@ -1,0 +1,73 @@
+<html>
+<head>
+    <style>
+        input {
+            width: 300px;
+            font-size: 20px;
+        }
+        button {
+            width: 230px;
+            font-size: 20px;
+        }
+        .button_div {
+            margin-top: 10px;
+        }
+        #container {
+            padding: 10px;
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div class="input_div">
+            <input placeholder="Enter the value of X" id="xValue">
+            <input placeholder="Enter the value of Y" id="yValue">
+            <input placeholder="Result will appear here" id="resultField" disabled="">
+        </div>
+
+        <div class="button_div">
+            <button onclick="add();">Addition (X + Y)</button>
+            <button onclick="subtract();">Subtraction (X - Y)</button>
+            <button onclick="multiply();">Multiplication (X * Y)</button>
+            <button onclick="divide();">Division (X / Y)</button>
+        </div>            
+    </div>
+    <script>
+        function add() {
+            let xValue = parseFloat(document.getElementById('xValue').value);
+            let yValue = parseFloat(document.getElementById('yValue').value);
+            let result = xValue + yValue;
+            document.getElementById('resultField').value = result;
+        }
+
+        function subtract() {
+            let xValue = parseFloat(document.getElementById('xValue').value);
+            let yValue = parseFloat(document.getElementById('yValue').value);
+            let result = xValue - yValue;
+            document.getElementById('resultField').value = result;
+        }
+
+        function multiply() {
+            let xValue = parseFloat(document.getElementById('xValue').value);
+            let yValue = parseFloat(document.getElementById('yValue').value);
+            let result = xValue * yValue;
+            document.getElementById('resultField').value = result;
+        }
+
+        function divide() {
+            let xValue = parseFloat(document.getElementById('xValue').value);
+            let yValue = parseFloat(document.getElementById('yValue').value);
+            
+            if (yValue === 0) {
+                document.getElementById('resultField').value = "Error: Division by zero!";
+            } else {
+                let result = xValue / yValue;
+                document.getElementById('resultField').value = result;
+            }
+        }
+    </script>
+
+</body>
+</html>
