@@ -1,0 +1,81 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: antiquewhite;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    transition: background 0.5s ease;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+#nav-panel {
+    background: rgb(32, 24, 110);
+    color: rgb(22, 21, 21);
+    padding: 20px;
+    border-radius: 15px;
+    width: 100%;
+}
+
+#nav-panel h2 {
+    font-weight: bold;
+    color: antiquewhite;
+    margin-bottom: 10px;
+}
+
+#work-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 100px; 
+}
+
+#work-list li {
+    padding: 12px 20px;
+    cursor: pointer;
+    background: rgb(200, 191, 223);
+    border-radius: 20px;
+    transition: background 0.3s, transform 0.2s;
+    color: rgb(7, 7, 7);
+}
+
+#work-list li:hover {
+    background: rgb(242, 233, 233);
+    transform: scale(1.05);
+}
+
+
+#content {
+    margin-top: 20px;
+    padding: 50px;
+    border-radius: 10px;
+    width: 100%;
+    color: black;
+}
+
+
+.task1-bg {
+    background: rgb(129, 155, 226);
+}
+
+.task2-bg {
+    background: rgb(111, 231, 213);
+}
+
+.task3-bg {
+    background: rgb(185, 109, 224);
+}
+
+h2 {
+    font-size: 24px;
+}
+
+p {
+    font-size: 18px;
+}
